@@ -8,7 +8,7 @@ This code was inspired by https://github.com/mjg59/python-decora (unfortunately 
 Linux, Python (>=2.7 or >=3.5) and  bluepy (https://github.com/Chaffelson/blupy)
 (pypygatt >=4.0.3 is also partially supported https://github.com/peplin/pygatt)
 
-This package as been tested on a RasperryPI ZeroW with Raspbian GNU/Linux 9 (stretch)
+This package has been tested on a RasperryPI ZeroW with Raspbian GNU/Linux 9 (stretch)
 
 ## 1. Install with:
 
