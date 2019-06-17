@@ -15,39 +15,39 @@ This package as been tested on a RasperryPI ZeroW with Raspbian GNU/Linux 9 (str
 `pip install pydecora_ble`
 
 ## 2. Short example
-```
-    First it is necessary to get the key from the device (this is necessary only one time).
 
-    Press and hold the down button for 3 seconds and then execute this function.
+First it is necessary to get the key from the device (this is necessary only one time).
 
-    get_decora_ble_key("F0:C7:7F:09:15:41")
+Press and hold the down button for 3 seconds and then execute this function.
 
-    Here "F0:C7:7F:09:15:41" is the physical address of your device.
+`get_decora_ble_key("F0:C7:7F:09:15:41")`
 
-    This will return a key.
+Here "F0:C7:7F:09:15:41" is the physical address of your device.
 
-    Then you can create the object with:
+This will return a key.
 
-    d=Decora_BLE(mac="F0:C7:7F:09:15:41",key='\x11S\x8dVW\xc2')
+Then you can create the object with:
 
-    Then connect with:
+`d=Decora_BLE(mac="F0:C7:7F:09:15:41",key='\x11S\x8dVW\xc2')`
 
-    d.connect()
+Then connect with:
 
-    To turn it on and off use:
+`d.connect()`
 
-    d.on()
+To turn it on and off use:
 
-    or
+` d.on()`
 
-    d.off()
+or
 
-    To change the level use (any number between 0-100).
+`d.off()`
 
-    d.set_level(54)
+To change the level use (any number between 0-100).
 
-    To disconnect:
+`d.set_level(54)`
 
-    d.disconnect()
+To disconnect:
 
-```    
+`d.disconnect()`
+
+
