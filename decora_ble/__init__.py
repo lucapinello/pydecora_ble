@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# -*- coding: utf-8 -*-
+# Copyright (c) 2019 Luca Pinello
+# MIT license
+#This code was inspired by https://github.com/mjg59/python-decora (this doesn't work with the latest firmware)
+
+__version__ = "0.1.0"
+
 class BLE_Device(object):
 
     def __init__(self,mac,backend='bluepy'):
