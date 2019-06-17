@@ -7,7 +7,7 @@
 #This code was inspired by https://github.com/mjg59/python-decora (this doesn't work with the latest firmware)
 
 __version__ = "0.1.0"
-import time 
+import time
 class BLE_Device(object):
 
     def __init__(self,mac,backend='bluepy'):
@@ -85,8 +85,10 @@ def get_decora_ble_key(mac,backend='bluepy'):
         else:
             rawkey=str(bytearray('0x11')+bytearray(rawkey)[1:])
             print('The key for your device is:'+repr(rawkey))
+        device.disconnect()
     else:
         print('This function is not supported with the pygatt backend')
+
 
 
 class Decora_BLE(object):
