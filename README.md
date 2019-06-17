@@ -24,7 +24,9 @@ Press and hold the down button for 3 seconds and then execute this function.
 
 Here "F0:C7:7F:09:15:41" is the physical address of your device.
 
-This will return a key.
+This will return a message with the key:
+
+`The key for your device is:'0x11S\x8dVW\xc2'`
 
 Then you can create the object with:
 
@@ -45,6 +47,12 @@ or
 To change the level use (any number between 0-100).
 
 `d.set_level(54)`
+
+You can read the current state with:
+
+`power,level=d.get_state()`
+
+Here power is 1 for on and 0 for off.
 
 To disconnect:
 
