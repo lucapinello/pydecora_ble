@@ -16,9 +16,12 @@ This package has been tested on a RasperryPI ZeroW with Raspbian GNU/Linux 9 (st
 
 ## 2. Short example
 
+
 First it is necessary to get the key from the device (this is necessary only one time).
 
 Press and hold the down button for 3 seconds and then execute this function.
+
+from decora_ble import get_decora_ble_key
 
 `get_decora_ble_key("F0:C7:7F:09:15:41")`
 
