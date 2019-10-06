@@ -6,7 +6,7 @@
 # MIT license
 #This code was inspired by https://github.com/mjg59/python-decora (this doesn't work with the latest firmware)
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 import time
 class BLE_Device(object):
 
