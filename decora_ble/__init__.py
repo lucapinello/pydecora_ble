@@ -80,6 +80,7 @@ def get_decora_ble_key(mac,backend='bluepy'):
         device.connect()
         device.write_handle(0x37, bytearray([0x22, 83, 0x00, 0x00, 0x00, 0x00]))
         rawkey=device.read_handle(0x37)
+        print(rawkey)
         if rawkey=='"SLEVI':
             print("Switch is not in pairing mode - hold down until green light flashes and execute this function again\n")
         else:
@@ -100,7 +101,7 @@ class Decora_BLE(object):
         self.backend=backend
 
         if isinstance(key, str):
-            self.key = bytearray(key)
+            self.key = bytearray(key,encoding="ISO-8859-1")
         else:
             raise Exception('expected a string like this:'+r'\x11S\x8dVW\xc2')
 
