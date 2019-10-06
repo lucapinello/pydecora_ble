@@ -20,7 +20,7 @@ version = re.search(
 
 setup(
     name='decora_ble',
-    version=0.1,
+    version=version,
     description='A Python module to interact with the Leviton Decora Dimmer via Bluetooth (BLE)',
     url='https://github.com/lucapinello/pydecora_ble',
     author='Luca Pinello',

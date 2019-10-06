@@ -8,7 +8,7 @@ This code was inspired by https://github.com/mjg59/python-decora (unfortunately 
 Linux, Python (>=2.7 or >=3.5) and  bluepy (https://github.com/Chaffelson/blupy)
 (pypygatt >=4.0.3 is also partially supported https://github.com/peplin/pygatt)
 
-This package as been tested on a RasperryPI ZeroW with Raspbian GNU/Linux 9 (stretch)
+This package has been tested on a RasperryPI ZeroW with Raspbian GNU/Linux 9 (stretch)
 
 ## 1. Install with:
 
@@ -16,9 +16,12 @@ This package as been tested on a RasperryPI ZeroW with Raspbian GNU/Linux 9 (str
 
 ## 2. Short example
 
+
 First it is necessary to get the key from the device (this is necessary only one time).
 
 Press and hold the down button for 3 seconds and then execute this function.
+
+from decora_ble import get_decora_ble_key
 
 `get_decora_ble_key("F0:C7:7F:09:15:41")`
 
