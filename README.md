@@ -12,7 +12,7 @@ This package has been tested on a RasperryPI ZeroW with Raspbian GNU/Linux 9 (st
 
 ## 1. Install with:
 
-`pip install pydecora_ble`
+`pip install decora-ble`
 
 ## 2. Short example
 
